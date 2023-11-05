@@ -24,6 +24,31 @@
   color: white;
 }
 
+
+.bg-animate {
+  height: 0px;
+}
+
+.bg-animate-1 {
+  top: 0px;
+}
+
+.bg-animate-2 {
+  bottom: 0px;
+}
+
+.item:hover .select-checkbox {
+  display: block;
+  transition: display 0.5s linear;
+}
+
+.item:hover .bg-animate {
+  height: 100%;
+  transition: height 0.5s linear;
+}
+
+
+
 .App-link {
   color: #61dafb;
 }
@@ -32,6 +57,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
